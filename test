@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const DUMMY_RETURN = 'Success';
+
+module.exports.test = () => DUMMY_RETURN;
+
+if (!module.parent) {
+  console.log(DUMMY_RETURN);
+}
